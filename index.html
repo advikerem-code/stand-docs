@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stand</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background: #F7F7F7;
+    color: #111;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px 60px;
+    width: 100%;
+  }
+  .logo {
+    position: relative;
+    display: inline-block;
+    padding: 6px 18px;
+    transform: rotate(-3deg);
+    margin-bottom: 32px;
+  }
+  .logo::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 12px; height: 12px;
+    border-top: 2.5px solid #111;
+    border-left: 2.5px solid #111;
+  }
+  .logo::after {
+    content: '';
+    position: absolute; bottom: 0; right: 0;
+    width: 12px; height: 12px;
+    border-bottom: 2.5px solid #111;
+    border-right: 2.5px solid #111;
+  }
+  .logo-text {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1.4px;
+    color: #111;
+    line-height: 1;
+  }
+  h1 {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+    line-height: 1.1;
+  }
+  .hl { color: #886A48; }
+  .lede {
+    font-size: 17px;
+    color: #737373;
+    margin-bottom: 48px;
+    line-height: 1.55;
+  }
+  .cards {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #EBEBEB;
+    border-radius: 14px;
+    padding: 22px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .card:hover {
+    border-color: #886A48;
+    transform: translateY(-1px);
+  }
+  .card-text {
+    flex: 1;
+  }
+  .card h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .card p {
+    font-size: 14px;
+    color: #737373;
+  }
+  .arrow {
+    font-size: 20px;
+    color: #AAA;
+  }
+  footer {
+    margin-top: auto;
+    padding: 24px;
+    text-align: center;
+    color: #AAA;
+    font-size: 13px;
+  }
+  footer a {
+    color: #886A48;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo"><span class="logo-text">stand</span></div>
+    <h1>Stand, <span class="hl">duruş koçun</span></h1>
+    <p class="lede">
+      Duruşunu kamerayla ölçer, 21 günlük kişisel bir program çıkarır. Tüm görsel işleme cihazında yapılır, sadece sayısal metrikler işlenir. Hesap yok, şifre yok.
+    </p>
+
+    <div class="cards">
+      <a class="card" href="./privacy.html">
+        <div class="card-text">
+          <h2>Gizlilik Politikası</h2>
+          <p>Verilerin nasıl işlenir, nerede tutulur</p>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="card" href="./terms.html">
+        <div class="card-text">
+          <h2>Kullanım Şartları</h2>
+          <p>Stand'i kullanım koşulları</p>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="card" href="./support.html">
+        <div class="card-text">
+          <h2>Destek</h2>
+          <p>Soruların için bize ulaş</p>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Stand
+  </footer>
+</body>
+</html>

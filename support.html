@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destek &middot; Stand</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#F7F7F7;color:#111;line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+  .topbar{background:#fff;border-bottom:1px solid #EBEBEB;padding:20px 24px}
+  .topbar-inner{max-width:720px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+  .logo{position:relative;display:inline-block;padding:4px 12px;transform:rotate(-3deg);text-decoration:none;color:#111}
+  .logo::before{content:'';position:absolute;top:0;left:0;width:8px;height:8px;border-top:2px solid #111;border-left:2px solid #111}
+  .logo::after{content:'';position:absolute;bottom:0;right:0;width:8px;height:8px;border-bottom:2px solid #111;border-right:2px solid #111}
+  .logo-text{font-size:22px;font-weight:800;letter-spacing:-0.8px;line-height:1}
+  .back{font-size:14px;color:#737373;text-decoration:none;font-weight:500}
+  .back:hover{color:#111}
+  .wrap{max-width:720px;margin:0 auto;padding:56px 24px 80px;width:100%;flex:1}
+  h1{font-size:36px;font-weight:800;letter-spacing:-1px;margin-bottom:20px;line-height:1.1}
+  h2{font-size:20px;font-weight:800;letter-spacing:-0.4px;margin-top:36px;margin-bottom:12px}
+  p{font-size:16px;color:#111;margin-bottom:16px}
+  .mail-btn{display:block;background:#111;color:#fff;border-radius:14px;padding:20px 24px;text-decoration:none;margin:24px 0 32px;transition:transform 0.15s}
+  .mail-btn:hover{transform:translateY(-1px)}
+  .mail-btn-label{font-size:18px;font-weight:800;margin-bottom:4px}
+  .mail-btn-addr{font-size:15px;color:rgba(255,255,255,0.7);font-weight:500}
+  .qa{font-size:16px;color:#111;margin-bottom:16px}
+  .qa b{font-weight:700;display:block;margin-bottom:4px}
+  .note{background:#F2EBE1;border-radius:12px;padding:16px 20px;margin-top:32px;font-size:14px;color:#886A48;font-weight:600}
+  a{color:#886A48;text-decoration:underline}
+  footer{margin-top:auto;padding:24px;text-align:center;color:#AAA;font-size:13px;border-top:1px solid #EBEBEB;background:#fff}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="logo" href="./index.html"><span class="logo-text">stand</span></a>
+      <a class="back" href="./index.html">Ana sayfa</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <h1>Destek</h1>
+    <p>Soru, sorun veya geri bildirim i&ccedil;in bize yaz. Genelde 1-2 iş g&uuml;n&uuml; i&ccedil;inde d&ouml;neriz.</p>
+
+    <a class="mail-btn" href="mailto:standapp.contact@gmail.com?subject=Stand%20Destek%20Talebi">
+      <div class="mail-btn-label">E-posta g&ouml;nder</div>
+      <div class="mail-btn-addr">standapp.contact@gmail.com</div>
+    </a>
+
+    <h2>Sık&ccedil;a sorulanlar</h2>
+
+    <p class="qa">
+      <b>Verilerim nereye gidiyor?</b>
+      Tarama g&ouml;r&uuml;nt&uuml;lerin cihazında kalır, buluta y&uuml;klenmez. Yalnızca sayısal duruş metriklerin şifreli olarak Firebase'e işlenir.
+    </p>
+
+    <p class="qa">
+      <b>Satın aldı&#287;ım paket iade edilir mi?</b>
+      İade işlemleri Apple App Store politikalarına tabidir. reportaproblem.apple.com adresinden talep oluşturabilirsin.
+    </p>
+
+    <p class="qa">
+      <b>Aboneli&#287;i nasıl iptal ederim?</b>
+      iOS Ayarlar, Apple ID, Abonelikler b&ouml;l&uuml;m&uuml;nden Stand aboneli&#287;ini istedi&#287;in zaman iptal edebilirsin.
+    </p>
+
+    <div class="note">
+      Yanıt s&uuml;resi 1-2 iş g&uuml;n&uuml;.
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Stand
+  </footer>
+</body>
+</html>
